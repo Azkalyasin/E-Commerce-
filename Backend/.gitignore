@@ -1,0 +1,29 @@
+# 📦 Ignore folder node_modules
+node_modules/
+
+# 🔐 Ignore file environment yang berisi data rahasia
+.env
+
+# 🧪 Ignore file database lokal Prisma (jika ada)
+prisma/dev.db
+prisma/dev.db-journal
+*.sqlite
+
+# 🧹 Ignore log file
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# 🖥️ Ignore settingan lokal editor
+.vscode/
+.DS_Store
+
+# 🌐 Ignore file env tambahan jika dipakai
+.env.local
+.env.development
+.env.production
+
+# 🚫 Ignore folder dist/build (jika project ini ada tahap build)
+dist/
+build/
