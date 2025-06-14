@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 5000;
 import productRoutes from "./routes/productRoutes.js";
 import userRouters from "./routes/userRouters.js"
 import cartRouters from "./routes/cartRoutes.js"
+import orderRouters from "./routes/orderRoutes.js"
 
 
 const app = express();
@@ -19,6 +20,7 @@ app.get('/', (req, res) => {
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRouters);        
 app.use("/api/cart", cartRouters); 
+app.use("/api/order", orderRouters)
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
